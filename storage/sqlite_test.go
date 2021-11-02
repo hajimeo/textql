@@ -7,8 +7,8 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/dinedal/textql/inputs"
-	"github.com/dinedal/textql/test_util"
+	"github.com/hajimeo/textql/inputs"
+	"github.com/hajimeo/textql/test_util"
 )
 
 var (

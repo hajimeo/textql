@@ -9,10 +9,10 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/dinedal/textql/inputs"
-	"github.com/dinedal/textql/outputs"
-	"github.com/dinedal/textql/storage"
-	"github.com/dinedal/textql/util"
+	"github.com/hajimeo/textql/inputs"
+	"github.com/hajimeo/textql/outputs"
+	"github.com/hajimeo/textql/storage"
+	"github.com/hajimeo/textql/util"
 )
 
 type commandLineOptions struct {

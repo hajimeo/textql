@@ -19,7 +19,8 @@ release: textql
 	git push origin `cat VERSION`
 
 install: test
-	go install -ldflags "-X main.VERSION=`cat VERSION` -s" ./textql/main.go
+	#go install -ldflags "-X main.VERSION=`cat VERSION` -s" ./textql/main.go
+	go build -v -ldflags "-X main.VERSION=`cat VERSION` -s" -o ./build/textql ./textql/main.go && cp -v -f ./build/textql /usr/local/bin/ && chmod a+x /usr/local/bin/textql
 
 man:
 	ronn man/textql.1.ronn

@@ -9,8 +9,8 @@ import (
 	"log"
 	"regexp"
 
-	"github.com/dinedal/textql/inputs"
-	"github.com/dinedal/textql/sqlparser"
+	"github.com/hajimeo/textql/inputs"
+	"github.com/hajimeo/textql/sqlparser"
 
 	sqlite3 "github.com/mattn/go-sqlite3"
 )

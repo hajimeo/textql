@@ -712,12 +712,10 @@ yydefault:
 		/* error ... attempt to resume parsing */
 		switch Errflag {
 		case 0: /* brand new error */
-			yylex.Error("syntax error")
+			yylex.Error("syntax error!")
 			Nerrs++
-			if yyDebug >= 1 {
-				__yyfmt__.Printf("%s", yyStatname(yystate))
-				__yyfmt__.Printf(" saw %s\n", yyTokname(yychar))
-			}
+			__yyfmt__.Printf("%s", yyStatname(yystate))
+			__yyfmt__.Printf(" saw %s\n", yyTokname(yychar))
 			fallthrough
 
 		case 1, 2: /* incompletely recovered error ... try again */
